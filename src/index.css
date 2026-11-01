@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #f1f5f9;
+    color: #0f172a;
+  }
+}
+
+/* Aztro Brand custom colors & utilities */
+:root {
+  --aztro-nav-dark: #0f172a;
+  --aztro-nav-sub: #1e293b;
+  --aztro-yellow: #ffd814;
+  --aztro-yellow-hover: #f7ca00;
+  --aztro-[#f59e0b]: #f59e0b;
+  --aztro-teal: #10b981;
+  --aztro-deal-red: #e11d48;
+  --aztro-link: #0284c7;
+  --aztro-link-hover: #0369a1;
+}
+
+/* Custom scrollbars for Amazon product carousels */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Smooth zoom transition */
+.image-zoom-container {
+  overflow: hidden;
+  position: relative;
+}
+.image-zoom-container img {
+  transition: transform 0.25s ease-out;
+}
+.image-zoom-container:hover img {
+  transform: scale(1.15);
+}

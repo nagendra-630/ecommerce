@@ -1,0 +1,6 @@
+{
+  "name": "Amazon Online Store",
+  "description": "Shop online for electronics, computers, apparel, home essentials, deals, and fast Prime delivery.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
